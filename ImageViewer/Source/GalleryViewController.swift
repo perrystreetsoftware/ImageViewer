@@ -664,9 +664,7 @@ open class GalleryViewController: UIPageViewController, ItemControllerDelegate {
     }
 
     open func itemControllerDidSingleTap(_ controller: ItemController) {
-
-        self.decorationViewsHidden.flip()
-        animateDecorationViews(visible: !self.decorationViewsHidden)
+        close()
     }
 
     open func itemControllerDidLongPress(_ controller: ItemController, in item: ItemView) {
