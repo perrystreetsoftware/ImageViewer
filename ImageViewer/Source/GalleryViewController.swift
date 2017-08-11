@@ -648,9 +648,7 @@ open class GalleryViewController: UIPageViewController, ItemControllerDelegate {
     }
 
     open func itemControllerDidSingleTap(_ controller: ItemController) {
-
-        self.decorationViewsHidden.flip()
-        animateDecorationViews(visible: !self.decorationViewsHidden)
+        close()
     }
 
     public func itemController(_ controller: ItemController, didSwipeToDismissWithDistanceToEdge distance: CGFloat) {
